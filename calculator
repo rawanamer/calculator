@@ -1,1 +1,42 @@
 
+
+
+def show_balance():
+ print("your balance is 1000$")
+
+def deposit():
+   amount = float(input("enter an amount to be deposited :"))
+
+
+def withdraw():
+    
+ amount =float(input("enter amount to be withdrawn:"))
+ if amount > balance:
+  print("sorry,insufficient funds")
+
+  balance = 1000
+ is_running = True
+ while is_running:
+    print("welcome!")
+    print("1.check balance")
+    print("2.deposit")
+    print("3.withdraw money")
+    print("4.Exit")
+
+    choice = input("Enter your choice:")
+
+    if choice=='1':
+        show_balance()
+    elif choice=='2':
+        deposit()
+    elif choice=='3':
+        withdraw()
+    elif choice =='4':
+        is_running = False
+    else:
+        print("not a valid choice")
+
+
+    print("thank you!")       
+
+
